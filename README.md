@@ -18,6 +18,7 @@ Required modules
 * responseTimes [0|1] - should script retrive reponseTimes (unused right now)
 * customUptimeRatio - days, separated with minus sign - for what periods get uptime ratio
 * debug [0|1] - switches script in debug mode
+* HTML [0|1] - generate HTML output or not
 
 [Host] section parameters
 ---------------------------
