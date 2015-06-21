@@ -70,12 +70,10 @@ if ($use_html){
 <body>
 <center>
 <table border="1">
-<tr>
 EOF
-        print "<td>Hostname</td><td>Status</td><td>Type</td>";
-        map {print "<td>$_ d</td>"} split /\-/,$customUptimeRatio;
-        print "<td>all time</td>";
-	print "</tr>";
+        print "<th>Hostname</th><th>Status</th><th>Type</th>";
+        map {print "<th>$_ d</th>"} split /\-/,$customUptimeRatio;
+        print "<th>All time</th>";
 }
 
 else {
@@ -127,4 +125,5 @@ if ($use_html){
 	print "</table>";
 	print "</center>";
 	print "</body>";
+	print "</html>";
 }
