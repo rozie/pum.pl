@@ -25,6 +25,12 @@ Required modules
 * apikey - API key (from Uptime Monitor)
 * name - optional display name. Allows to overwrite friendlyName from Uptime Monitor, which is used by default.
 
+Typical usage
+-------------------------
+Enable HTML in config file (HTML = 1 in [Global] section), make script executable (chmod +x pum.pl), add script to cron, redirect output to location readable by HTTP server.
+
+*/30 * * * * /home/pum.pl > /var/www/pum.html
+
 License
 ----------
 GPL v2. See LICENSE file.
