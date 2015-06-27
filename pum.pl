@@ -62,6 +62,7 @@ if ($use_html){
 <head>
 <title>Perl Uptime Monitor</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="300">
 <meta name='robots' content='noindex, nofollow, noarchive'/>
 <meta name='content-language' content='pl'/>
 <meta name="Description" content="Perl Uptime Monitor generated page"/>
