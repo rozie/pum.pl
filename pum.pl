@@ -1,22 +1,12 @@
 #!/usr/bin/perl
 
-# Script for generating output based on data from Uptime Monitor service.
+# Script for generating output based on data from Uptime Robot service.
 # Author: Pawe³ 'Ró¿a' Ró¿añski rozie[at]poczta(dot)onet(dot)pl
 # Homepage: https://github.com/rozie/pum.pl
 # License: GPL v2.
 
-# Usage: run the script, enjoy the output.
+# Usage: run the script, enjoy the output. See README for details.
 # Required modules: LWP::UserAgent, Config::INI, XML::Simple
-# All data are generated on ini file basis. All sections in ini file except [Global] section are treated as host data.
-# [Global] section parameters:
-# responseTimes [0|1] - should script retrive reponseTimes
-# customUptimeRatio - days, separated with minus sign - for what periods get uptime ratio
-# debug [0|1] - switches script in debug mode
-# HTML [0|1] - generate HTML output or not
-#
-# [Host] section parameters:
-# apikey - API key (from Uptime Monitor)
-# name - optional display name. Allows overwrite friendlyName from Uptime Monitor, which is used by default.
 
 my $Version="pum.pl 0.2\n";
 
