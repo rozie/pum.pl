@@ -1,6 +1,13 @@
 pum.pl
 ========
-Reading data from Uptime Monitor in Perl.
+This is tool for reading data from Uptime Robot (external free uptime montior service; account required) written in Perl.
+
+Features
+----------
+* runs from cron - separates backend from output
+* keys to API objects are hidden
+* allows to hide (overwrite) hostnames/IPs/URLs
+* simple static HTML as output - no JS support in browser required
 
 Usage
 --------
@@ -22,14 +29,14 @@ Required modules
 
 [Host] section parameters
 ---------------------------
-* apikey - API key (from Uptime Monitor)
-* name - optional display name. Allows to overwrite friendlyName from Uptime Monitor, which is used by default.
+* apikey - API key (from Uptime Robot)
+* name - optional display name. Allows to overwrite friendlyName from Uptime Robot, which is used by default.
 
 Typical usage
 -------------------------
 Enable HTML in config file (HTML = 1 in [Global] section), make script executable (chmod +x pum.pl), add script to cron, redirect output to location readable by HTTP server.
 
-*/30 * * * * /home/pum.pl > /var/www/pum.html
+*/30 * * * * ~/pum.pl > /tmp/pum.html && /bin/mv /tmp/pum.html /var/www/pum.html
 
 License
 ----------
