@@ -26,6 +26,7 @@ Required modules
 * customUptimeRatio - days, separated with minus sign - for what periods get uptime ratio
 * debug [0|1] - switches script in debug mode
 * HTML [0|1] - generate HTML output or not
+* bootstrap [0|1] - use http://getbootstrap.com/ or not
 
 [Host] section parameters
 ---------------------------
@@ -34,7 +35,7 @@ Required modules
 
 Typical usage
 -------------------------
-Enable HTML in config file (HTML = 1 in [Global] section), make script executable (chmod +x pum.pl), add script to cron, redirect output to location readable by HTTP server.
+Enable HTML and bootstrap in config file (HTML = 1 in [Global] section), make script executable (chmod +x pum.pl), add script to cron, redirect output to location readable by HTTP server.
 
 */30 * * * * ~/pum.pl > /tmp/pum.html && /bin/mv /tmp/pum.html /var/www/pum.html
 
