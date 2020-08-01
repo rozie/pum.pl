@@ -7,7 +7,7 @@ Features
 * runs from cron - separates backend from output
 * keys to API objects are hidden
 * allows to hide (overwrite) hostnames/IPs/URLs
-* simple static HTML as output - no JS support in browser required
+* simple static HTML as output - no JS support in browser required [live version](https://zakr.es/pum.html)
 
 Usage
 --------
