@@ -2,6 +2,8 @@ pum.pl
 ========
 This is tool for reading data from Uptime Robot (external free uptime montior service; account required) written in Perl.
 
+WARNING Project discontinued due to API change to v2. See [pum.py](https://github.com/rozie/pum.py) for supported Python version.
+
 Features
 ----------
 * runs from cron - separates backend from output
